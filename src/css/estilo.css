@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+html{
+    font-family: "Figtree", sans-serif;
+    background-color: hsl(47, 88%, 63%);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+}
+
+.container .card{
+    background-color: #fff;
+    padding: 20px;
+    max-width: 400px;
+    height: 510px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 2px hsl(0, 0%, 7%);
+    border: 2px solid hsl(0, 0%, 7%);
+    height: auto;
+}
+
+.container .card .capa{
+    max-width: 100%;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+
+.container .card .conteudo{
+    padding: 10px;
+}
+
+.container .card .conteudo .tag{
+    background-color: hsl(47, 88%, 63%);
+    padding: 5px;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+    font-weight: 800;
+    margin: 10px 0 15px 0;
+}
+
+.container .card .conteudo .data-publicacao{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.container .card .conteudo h1{
+    font-size: 27px;
+    padding: 15px 0;
+}
+
+.container .card .conteudo h1 a:hover{
+    color: hsl(47, 88%, 63%);
+}
+
+.container .card .conteudo .descricao{
+    font-size: 18px;
+    color: hsl(0, 0%, 42%);
+    padding-bottom: 15px;
+}
+
+.container .perfil{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 800;
+    padding: 0 10px;
+    justify-content: flex-start;
+}
+
+.container .perfil img{
+    max-width: 30px;
+}
+
+@media(max-width: 475px){
+    .container .card{
+        margin: 30px;
+    }
+}
